@@ -4,6 +4,7 @@ import java.io.Writer
 
 object oops_basic_1 extends App {
 
+
   val author = new Writer("Jishan", "Mr.", 1992)
 
   val novel = new Novel("Great Expectation", 2003, author)
@@ -28,5 +29,4 @@ class Novel(name:String, year_of_release:Int, author: Writer){
   def copy(newYear:Int): Novel = new Novel(name, newYear, author)
 
 }
-
 
