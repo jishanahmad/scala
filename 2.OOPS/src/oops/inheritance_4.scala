@@ -10,8 +10,14 @@ object inheritance_4 {
 
     class cat extends Animal
 
-    val cat = new cat
-    cat.eat
-  }
+    class Dog extends Animal{
+      override def eat = {
+        super.eat
+        println("Eat,eat")
+      }
+    }
 
+    val unknownAnimal: Animal = new Dog
+    unknownAnimal.eat
+  }
 }
